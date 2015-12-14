@@ -28,4 +28,8 @@ router.get('/drinking/coffee(.gif)?', sendGif);
 router.get('/coding.furiously(.gif)?', sendGif);
 router.get('/coding/furiously(.gif)?', sendGif);
 
+router.get('/giffing', function(req, res, next) {
+  res.render('')
+});
+
 module.exports = router;

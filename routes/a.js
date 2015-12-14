@@ -9,5 +9,9 @@ router.get('/software.engineer', function(req, res, next) {
     });
 });
 
+router.get('/gamer', function(req, res, next){
+    res.redirect('https://player.me/codecrshr');
+})
+
 
 module.exports = router;

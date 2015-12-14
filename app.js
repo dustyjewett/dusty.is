@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var exphbs  = require('express-handlebars');
+var nodalytics = require('nodalytics');
 
 var app = express();
 
@@ -13,9 +14,11 @@ var app = express();
 app.engine('handlebars', exphbs({defaultLayout: 'base'}));
 app.set('view engine', 'handlebars');
 
+app.use(nodalytics('UA-71350191-1'));
+
 // uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
-app.use(logger('dev'));
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(logger('combined'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
