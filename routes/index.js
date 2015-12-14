@@ -32,4 +32,8 @@ router.get('/giffing', function(req, res, next) {
   res.render('')
 });
 
+router.get('/reading.docs', function(req, res, next) {
+  res.sendFile( 'reading.docs.mp4', gifOptions);
+});
+
 module.exports = router;
