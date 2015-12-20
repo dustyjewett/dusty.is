@@ -39,6 +39,7 @@ router.get('/reading.docs', function(req, res, next) {
   sbjs.ogtype('video.other');
   sbjs.ogvideo({
     url: 'http://dusty.is/moving-pictures/reading.docs.mp4',
+    type: 'video/mp4',
     width: 640,
     height: 360
   });
