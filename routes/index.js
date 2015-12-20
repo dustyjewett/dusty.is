@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var ShoebillJS = new require('shoebill-js');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -33,7 +34,19 @@ router.get('/giffing', function(req, res, next) {
 });
 
 router.get('/reading.docs', function(req, res, next) {
-  res.sendFile( 'reading.docs.mp4', gifOptions);
+  var sbjs = new ShoebillJS();
+  sbjs.ogtitle('Dusty Is Reading Docs');
+  sbjs.ogtype('video.other');
+  sbjs.ogvideo({
+    url: 'http://dusty.is/moving-pictures/reading.docs.mp4',
+    width: 640,
+    height: 360
+  });
+
+  res.render('giffing', {
+    file: '/ani/' + 'reading.docs.mp4',
+    meta: sbjs.toHTML()
+  });
 });
 
 module.exports = router;
