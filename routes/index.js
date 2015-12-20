@@ -34,11 +34,12 @@ router.get('/giffing', function(req, res, next) {
 });
 
 router.get('/reading.docs', function(req, res, next) {
+  var video = 'http://dusty.is/moving-pictures/reading.docs.mp4';
   var sbjs = new ShoebillJS();
   sbjs.ogtitle('Dusty Is Reading Docs');
   sbjs.ogtype('video.other');
   sbjs.ogvideo({
-    url: 'http://dusty.is/moving-pictures/reading.docs.mp4',
+    url: video,
     type: 'video/mp4',
     width: 640,
     height: 360
@@ -46,7 +47,7 @@ router.get('/reading.docs', function(req, res, next) {
 
   res.render('mp', {
     layout: 'moving-pictures',
-    file: '/ani/' + 'reading.docs.mp4',
+    file: video,
     meta: sbjs.toHTML()
   });
 });
