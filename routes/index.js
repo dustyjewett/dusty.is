@@ -43,7 +43,8 @@ router.get('/reading.docs', function(req, res, next) {
     height: 360
   });
 
-  res.render('giffing', {
+  res.render('mp', {
+    layout: 'moving-pictures',
     file: '/ani/' + 'reading.docs.mp4',
     meta: sbjs.toHTML()
   });
