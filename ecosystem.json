@@ -1,0 +1,41 @@
+{
+  /**
+   * Application configuration section
+   * http://pm2.keymetrics.io/docs/usage/application-declaration/
+   */
+  apps : [
+
+    // First application
+    {
+      name      : "API",
+      script    : "./bin/www",
+      env: {
+        COMMON_VARIABLE: "true"
+      },
+      env_production : {
+        NODE_ENV: "production"
+      }
+    },
+
+    // Second application
+    {
+      name      : "WEB",
+      script    : "web.js"
+    }
+  ],
+
+  /**
+   * Deployment section
+   * http://pm2.keymetrics.io/docs/usage/deployment/
+   */
+  deploy : {
+    production : {
+      user : "dusty",
+      host : "104.236.185.108",
+      ref  : "origin/master",
+      repo : "git@github.com:dustyjewett/dusty.is.git",
+      path : "~/www/production",
+      "post-deploy" : "npm install ; pm2 startOrRestart ecosystem.json --env production"
+    }
+  }
+}
