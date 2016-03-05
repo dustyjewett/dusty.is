@@ -1,2 +1,4 @@
 /.idea
 /node_modules
+/ecosystem.json
+/client_id.json
