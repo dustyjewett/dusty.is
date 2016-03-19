@@ -28,6 +28,8 @@ app.use('/', require('./routes/index'));
 app.use('/a', require('./routes/a'));
 app.use('/on', require('./routes/on'));
 app.use('/the', require('./routes/the'));
+app.use('/authorizing.google', require('./routes/authorizing-google'));
+app.use('/running', require('./routes/running')); 
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

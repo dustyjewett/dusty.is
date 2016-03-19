@@ -7,7 +7,7 @@
 
     // First application
     {
-      name      : "API",
+      name      : "www",
       script    : "./bin/www",
       env: {
         COMMON_VARIABLE: "true"
@@ -16,12 +16,6 @@
         NODE_ENV: "production",
         PORT: 80
       }
-    },
-
-    // Second application
-    {
-      name      : "WEB",
-      script    : "web.js"
     }
   ],
 
