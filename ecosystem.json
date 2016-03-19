@@ -4,17 +4,20 @@
    * http://pm2.keymetrics.io/docs/usage/application-declaration/
    */
   apps : [
-
-    // First application
     {
       name      : "www",
       script    : "./bin/www",
       env: {
-        COMMON_VARIABLE: "true"
+        GOOGLE_CLIENT_ID: "362487958945-dlcfl5vg50covcrekphh9u0g0hrlnlm1.apps.googleusercontent.com",
+        GOOGLE_CLIENT_SECRET: "o9x28h9nBikUuzcteyC581NE",
+        GOOGLE_REDIRECT_URI: "http://this.dusty.is:3000/authorizing.google"
       },
       env_production : {
         NODE_ENV: "production",
-        PORT: 80
+        PORT: 80,
+        GOOGLE_CLIENT_ID: "362487958945-dlcfl5vg50covcrekphh9u0g0hrlnlm1.apps.googleusercontent.com",
+        GOOGLE_CLIENT_SECRET: "o9x28h9nBikUuzcteyC581NE",
+        GOOGLE_REDIRECT_URI: "http://dusty.is/authorizing.google"
       }
     }
   ],
