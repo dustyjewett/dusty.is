@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 var fs = require('fs');
-var CLIENT = JSON.parse(fs.readFileSync('client_id.json', 'utf8'));
 var jwt = require('express-jwt');
 var googleapis = require('googleapis');
 var oauth2Client = require('../googleAuthClient');
