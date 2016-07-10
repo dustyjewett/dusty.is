@@ -11,7 +11,7 @@
       },
       env_production : {
         NODE_ENV: "production",
-        PORT: 80,
+        PORT: 3200,
       }
     }
   ],
@@ -23,7 +23,7 @@
   deploy : {
     production : {
       user : "dusty",
-      host : "104.236.185.108",
+      host : "159.203.216.28",
       ref  : "origin/master",
       repo : "git@github.com:dustyjewett/dusty.is.git",
       path : "~/www/production",
