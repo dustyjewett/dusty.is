@@ -29,8 +29,17 @@ router.get('/drinking/coffee(.gif)?', sendGif);
 router.get('/coding.furiously(.gif)?', sendGif);
 router.get('/coding/furiously(.gif)?', sendGif);
 
-router.get('/giffing', function(req, res, next) {
-  res.render('')
+router.get('/giffing/:gif', function(req, res, next) {
+  console.log("Headers: ", req.headers);
+  res.sendFile('reading.docs.mp4', {
+    root: __dirname + '/../public/moving-pictures/',
+    dotfiles: 'deny',
+    headers: {
+      'x-timestamp': Date.now(),
+      'x-sent': true,
+      'Content-Type': 'image/gif'
+    }
+  })
 });
 
 router.get('/reading.docs', function(req, res, next) {
