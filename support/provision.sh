@@ -2,7 +2,7 @@
 
 # Install Git, Node, etc
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-sudo apt-get install -y ntp git nginx nodejs build-essential pm2
+sudo apt-get install -y ntp git nginx nodejs build-essential letsencrypt
 
 #Enable Firewall
 sudo ufw allow ssh
@@ -21,3 +21,5 @@ sudo bash -c 'echo "dusty ALL=(ALL:ALL) NOPASSWD: ALL" | (EDITOR="tee -a" visudo
 adduser dusty
 adduser dusty sudo
 
+# Install PM2
+sudo npm install -g pm2
