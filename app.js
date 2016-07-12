@@ -23,6 +23,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
+// Ensure we give image/gif mime type for gifv
+express.static.mime.define({
+  'image/gif':['gif', 'gifv']
+});
 
 app.use(express.static(path.join(__dirname, 'public')));
 
