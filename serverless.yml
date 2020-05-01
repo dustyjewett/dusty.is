@@ -1,0 +1,55 @@
+service:
+  name: dusty-is
+# app and org for use with dashboard.serverless.com
+app: dustyis
+org: dustyjewett
+
+custom:
+  stage: ${opt:stage, self:provider.stage}
+
+  webpack:
+    webpackConfig: ./webpack.config.js
+    includeModules: true
+
+  domains:
+    prod: dusty.is
+    staging: staging.hat6.com
+    dev: sls.hat6.com
+
+  fullstack:
+    domain: ${self:custom.domains.${self:custom.stage}}
+    #domain: my-custom-domain.com
+    certificate: 	arn:aws:acm:us-east-1:093500061846:certificate/90c4986b-28de-437c-a44f-a8d61c758c53     # The ARN for the SSL cert to use form AWS CertificateManager
+    bucketName: ${self:custom.domains.${self:custom.stage}}-deploy  # Unique name for the S3 bucket to host the client assets
+    distributionFolder: client/build            # Path to the client assets to be uploaded to S3
+    singlePageApp: true                       # If true 403 errors will be rerouted (missing assets) to your root index document to support single page apps like React and Angular where the js framework handles routing
+    apiPath: api                               # The path prefix for your API Gateway lambdas. The path for the lambda http event trigger needs to start with this too eg. api/myMethod
+    #apiGatewayRestApiId: a12bc34df5            # If "Api Gateway Rest Api" is not part of the same serverless template, you can set your API id here
+    clientCommand: yarn build                # Command to generate the client assets. Defaults to doing nothing
+    clientSrcPath: client                      # The path to where you want to run the clientCommand
+    #logging:
+    #  bucket: dusty-is-logs.s3.amazonaws.com
+    #  prefix: ${self:custom.domains.${self:custom.stage}}
+    minimumProtocolVersion: TLSv1.2_2018
+    noConfirm: true
+
+
+plugins:
+  - serverless-webpack
+  - fullstack-serverless
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  apiGateway:
+    minimumCompressionSize: 1024 # Enable gzip compression for responses > 1 KB
+  environment:
+    AWS_NODEJS_CONNECTION_REUSE_ENABLED: 1
+
+functions:
+  hi:
+    handler: handler.hi
+    events:
+      - http:
+          method: get
+          path: api/hi
