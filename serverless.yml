@@ -53,3 +53,17 @@ functions:
       - http:
           method: get
           path: api/hi
+
+resources:
+  extensions:
+    WebAppS3Bucket:
+      Properties:
+        WebsiteConfiguration:
+          IndexDocument: "index.html"
+          ErrorDocument: "error.html"
+          RoutingRules:
+            - RoutingRuleCondition:
+                KeyPrefixEquals: '/a/gamer'
+              RedirectRule:
+                HostName: 'player.me'
+                ReplaceKeyWith: 'codecrshr'
