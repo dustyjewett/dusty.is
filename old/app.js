@@ -30,7 +30,7 @@ express.static.mime.define({
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', require('./routes/index'));
+app.use('/', require('./routes'));
 app.use('/a', require('./routes/a'));
 app.use('/on', require('./routes/on'));
 app.use('/the', require('./routes/the'));
