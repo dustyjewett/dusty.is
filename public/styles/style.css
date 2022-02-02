@@ -153,7 +153,9 @@ body {
 	text-align:right;
 	color:#1C75BC;
 }
-
+.description {
+	padding-left: 10px;
+}
 .description p:first-letter{
 	font-size:120%;
 }
@@ -167,7 +169,8 @@ body {
 .hresume .experience
 {
     margin: 10px 0 30px 20px;
-    padding: 1px;
+    padding: 1px 1px 20px 1px;
+    border-bottom: 1px dotted blue;
 }
 
 .hresume .summary, .hresume .tags
@@ -198,7 +201,9 @@ body {
 }
 
 
-
+.clearfix {
+	background: rgba(1, 1, 1, .07);
+}
 
 
 
