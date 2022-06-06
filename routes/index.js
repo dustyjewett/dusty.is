@@ -61,4 +61,8 @@ router.get('/reading.docs', function(req, res, next) {
   });
 });
 
+router.get('/pretzeling', function(req, res, next) {
+  res.render('pretzel');
+});
+
 module.exports = router;

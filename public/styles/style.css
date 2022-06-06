@@ -85,6 +85,9 @@ a:hover { color: #036; }
    ||                                              ||
     \\ ========================================== //
 */
+html, body{
+    height: 100%
+}
 body {
 	font-family: 'Molengo', sans-serif;
 	font-size: 100%;
