@@ -12,7 +12,7 @@
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
     "express-jwt": "^3.3.0",
-    "googleapis": "^36.0.0",
+    "googleapis": "^39.1.0",
     "jade": "~1.11.0",
     "jsonwebtoken": "^5.7.0",
     "moment": "^2.12.0",
