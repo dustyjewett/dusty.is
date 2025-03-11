@@ -1,0 +1,156 @@
+{
+  "summary":"I'm a Software Engineer who can contribute at any level. Whether it's:\n\n  - Architecting a mono-repo frontend repository that allows for shared components across multiple sites and integrations\n  - Developing custom frontend components that perfectly captures the designer's vision\n  - Diving into flame charts to determine which components are killing the page metrics\n  - Writing CloudFormation/CDK to provision tech stacks\n  - Writing raw SQL to optimize queries that the ORM doesn't understand\n  - Designing async work queues to allow for efficient data processing\n\nGiven free rein, I would find myself pulled towards the frontend systems. That's almost never the case, and I go where I can make the most impact. While I can build entire systems on my own, I love working on a team. I feed off of the PR process and I love diving deep to explain niche knowledge to new engineers.",
+  "jobs":[
+    {
+      "employer": "Songtradr",
+      "start": "2022-04-01",
+      "end":"2025-04-11",
+      "primaryColor":"#f84b1c",
+      "title":"Senior Staff Engineer",
+      "projects":[
+        {
+          "name":"Bandcamp: Shopify Inventory Sync",
+          "role":"Project Lead",
+          "start": "2024-01-01",
+          "end": "2025-02-15",
+          "tags": ["typescript", "vue", "ruby", "shopify", "async", "pubsub", "pipeline", "ecommerce", "mysql"],
+          "description":"Built an integration with Shopify that allows Artists to simplify their inventory maintenance. Focused on building a system that builds trust with the users by proactively warning users about why they can't do something. Ensured that we kept that trust by providing detailed updates of actions we took on the user's behalf.\n\n  -   Planned and built a system that synchronizes inventory between two retail powerhouses.\n  -   Built out admin tools and audit logs to ensure that when one systems stops agreeing with the other, we're able to clearly explain why to the users (like deleting an item from one store but not the other).\n  -   Worked with internal Systems Team to be the first full usage of Google Pubsub.\n  -   Used Bandcamp's internal-only Ruby framework on the Backend, and Vue on the Frontend."
+        },
+        {
+          "name":"Songtradr One / SSO",
+          "role":"Team Support",
+          "start":"2023-08-22",
+          "end":"2023-12-22",
+          "tags": ["nodejs", "typescript", "cdk", "infrastructure", "aws", "cognito", "ci/cd"],
+          "description":"Re-tooled the budding project's CDK and build pipelines to support the team's ideal workflows, namely, fully independent environments for each pull request.\n\n  -   Built out a library of CDK constructs/patterns to enable broader adoption across the company\n  -   Worked through the various issues presented by AWS's limitations on some resources.\n  -   Facilitated the existing team determining what their ideal workflow is, then implementing it."
+        },
+        {
+          "name":"Phoenix Data Pipeline",
+          "role":"Architect & Lead Engineer",
+          "start":"2022-04-01",
+          "end":"2023-08-21",
+          "tags":["ruby", "rails", "react", "typescript", "javascript", "aws", "cdk", "eventbridge", "pipeline", "postgresql", "ddex"],
+          "description":"Co-owned a Ruby/Rails monolith that managed all ingestion of music into the various Songtradr consumer-facing applications.\n\n  -   Architected move towards a real-time event-based ingestion and delivery system. Implemented the ingestion/delivery side of things, while working closely with the teams that were receiving the data\n\n  -   Developed a system that allowed us to scale from a tightly coupled pairing to a system that supported `n` number of applications. In 6 months grew from one to four discrete applications working off of a single data set, each with it's own unique business rules. Said system was built with auditing as a first-class concern, allowing for easy querying of data that did not pass a specific business rule.\n  -   Served as a mentor to multiple other teams.\n  -   Triaged and fixed many data-related issues."
+        }
+      ]
+    },{
+      "employer": "Twitch",
+      "start":"2016-08-01",
+      "end":"2022-04-01",
+      "primaryColor": "#9146ff",
+      "title": "Frontend Engineer 3 (L6)",
+      "projects":[{
+        "name": "IGDB",
+        "role": "Lead Engineer",
+        "start": "2019-09-01",
+        "end":"2022-02-28",
+        "tags":[],
+        "description":"Moved to Sweden to provide engineering leadership and mentoring for IGDB team after their acquisition by Twitch.\n\n  -   Migrated Rails & Kotlin stack from Heroku to AWS.\n  -   Setup various bits of infrastructure and process expected of a more mature organization:\n      -   Jenkins Builds for production systems\n      -   Configuration-as-code builds for all systems: Fargate/Docker deploys\n      -   Per-PR Staging Environments, mandatory Code Reviews before merge.\n      -   Managed dashboards with on-call schedules and paging, on-call checklists and handover meetings.\n      -   Runbooks for handling on-call issues\n      -   Engineering as a team. When I joined, each developer managed their own service.\n  -   Served as temp Engineering Manager and Hiring Manager while EM was on parental leave.\n  -   Provided the means and mechanisms for understanding the critical state of various systems:\n      -   Data Synchronization status between main database and the public API service\n      -   Systems to manage and monitor various large-scale ingestion processes.\n      -   Active notifications (via slack) of errors in vital workflows. (which had previously been actively ignored)\n  -   Worked tirelessly to reduce 10 years of technical debt that was effectively suffocating the engineering team.\n  -   IGDB is now a pivotal data provider to Twitch and Amazon teams, with excellent uptime, trackable SLAs, stable/accurate API, and a growing userbase."
+      }, {
+        "name":"Channel Page",
+        "role":"Lead Engineer",
+        "start": "2018-03-01",
+        "end":"2019-08-30",
+        "tags":[],
+        "description":"Lead Engineer on Channel Page team. Channel Page is the page where users spend 99% of their time. We provided the framework for video, vod, chat, etc to work their magic.\n\n  -   Worked on reducing page load latency by deferring non-vital components and carefully managing data loading. Successfully met and exceeded the very ambitious goals set by leadership.\n  -   Lead project to redesign the channel page as an experiment. Rewrote major components to support more centralized data handling and no-compromises, full-experience A/B testing. While the experiment as a whole did not graduate, the systems I built were the foundation for the redesign in late 2019.\n  -   Coordinated with many teams across the company to support their feature development work. As a lead on a 'Shared Space', part of my job was to know the big projects that all of the adjacent teams were working on, to ensure feasibility of the work landing at the same time."
+
+      }, {
+        "name":"Commerce",
+        "role": "Lead Frontend Engineer",
+        "start": "2016-08-01",
+        "end": "2018-03-01",
+        "tags":[],
+        "description":"Front End Engineer on Commerce Team.\n\n  - Lead development on major commerce initiatives: Game Store, Channel/Store integrations, Chat/Store integrations.\n  - Mentored Full-Stack engineers on adjacent teams for Bits and Subs. Called in to pick up the slack when deadlines were in danger.\n  - Served on a 10-person team of Senior Front-End Engineers from across the company to provide architectural reviews and ensure code quality. Earned the nickname 'Firestarter' for blocking the release of a major feature due to significant concerns in code quality. (I eventually transferred to work for the manager of this team)\n  - Worked on migrating from Ember to React. In roughly a year, entire stack was rewritten in React. Was loaned out to various teams to ensure they met the deadlines."
+
+      }]
+    },{
+      "employer": "Turbo Patent",
+      "start":"2015-04-01",
+      "end":"2016-08-01",
+      "primaryColor": "#f84b1c",
+      "title": "Lead Frontend Engineer",
+      "description":"Mostly focused on leading UI teams create a web app that aimed to be IntelliJ for writing Patents.\n\n  - Refactored and upgraded the patent editor, now based on CK Editor.\n  - Created a set of components that allowed for super fast rendering of 1000s of items despite CK Editor's intensive and setTimeout() laden initialization.\n  - Worked through the process of breaking a monolithic Ember app into smaller libraries.\n  - Created a library that allows developers to run Ember logic in Node on the server."
+    },{
+      "employer": "Simply Measured",
+      "start":"2013-02-01",
+      "end":"2015-04-01",
+      "primaryColor": "#3996e3",
+      "title": "Senior Software Engineer / Engineering Manager",
+      "projects":[{
+        "name":"Diesel",
+        "role": "Engineering Manager",
+        "start": "2013-08-01",
+        "end": "2015-04-01",
+        "tags":[],
+        "description":"Managed the team that ran the Rails app.\n  - Hired and onboarded 6 devs over 9 months.\n  - Architected a move to 'right-sized' micro-services, enabling green-field development without modifying the 4+ year old Rails site.\n  - Reduced support requirements from 1-2 Sr devs per week to less than 1 Jr dev per week.\n  - Worked on cloud transition from dedicated servers to Rackspace Cloud.  - Started transition to Single Page Apps by extracting authz/authn to a standalone service."
+      },{
+        "name":"Siren",
+        "role":"Lead Engineer",
+        "start":"2013-02-01",
+        "end":"2013-08-01",
+        "tags":[],
+        "description":"Inherited a JS project dedicated to creating 1:1 fidelity renderings of Excel Spreadsheet Charts in the browser.\n  - Refactored to more modern buid chains (grunt)\n  - Created regression test software that could visually diff the output.\n  - Shift into maintenance mode, able go 3-9 months without needing changes."
+      }]
+    },{
+      "employer": "Dendreon",
+      "start":"2012-03-01",
+      "end":"2013-01-01",
+      "primaryColor": "#4d8bbe",
+      "title": "Senior Software Engineer",
+      "description":"Added features to the Client's legacy application, while minimizing the risk of regressions.\n  - Built several prototypes in conjunction with UX and Product Team for pitching new/greenfield development.\n  - Worked with client to find a technical solution that matched their desire to have a single language powering their Frontend and Backend.\n  - Lead UI Development utilizing Vaadin, Java and Groovy for two new projects.\n  - Implemented several patterns, including MVVM, which allowed a more structured and contemporary paradigm than provided by Vaadin alone."
+    },{
+      "employer": "Real Networks",
+      "start":"2010-07-01",
+      "end":"2012-03-01",
+      "primaryColor": "#007cc2",
+      "title": "Senior Software Engineer",
+      "projects":[{
+        "name":"Butterfly",
+        "role":"Senior Engineer",
+        "start":"2011-10-01",
+        "end":"2012-03-01",
+        "tags":[],
+        "description":"Working on an HTML/JS application that uses one codebase to power both a Web App and a Chrome/Firefox/IE Extension.\n  - Created a custom module for Backbone that enables transparent JSONP communication.\n  - Developed a prototype application that replicated the Flash/Flex client/server communication in HTML/JavaScript."
+      }, {
+        "name":"Unifi",
+        "role":"Lead Frontend Engineer",
+        "start":"2010-07-01",
+        "end":"2011-10-01",
+        "tags":[],
+        "description":"Led team of 4 developers to create a full-featured WebApp for Real's Music/Photo/Video Cloud solution. Coordinated with five other dev teams, along with Design and QA, to be the 'first adopter' of many new features and designs.\n  - Architected many of the systems that drove the UI, including a system that could query and cache multiple levels of data, and a navigation system that could handle the complex UI paradigms the designers dreamt up.\n  - Developed many custom UI Components, including a complex and animated breadcrumb bar, TileLists that could handle non-sequential loading of data, and screens that behaved differently based on the state of many different variables (though I argued against the last one, on usability issues, and lost)."
+
+      }]
+    },{
+      "employer": "The Active Network",
+      "start":"2008-10-01",
+      "end":"2010-06-01",
+      "primaryColor": "#f0a912",
+      "title": "Lead Engineer / Engineering Manager",
+      "projects":[{
+        "name":"Active Payment Services",
+        "role":"Engineering Manager",
+        "start":"2009-02-01",
+        "end":"2010-06-01",
+        "tags":[],
+        "description":"Led team that owns every component that touches any financial transaction throughout all new markets. Focused on the creation of UI components that were customizable to the specific usage, but were able to maintain the business logic that was required for company-wide auditing requirements. I often had to find compromises between the business/legal requirements and the requests of an individual department."
+      },{
+        "name":"Active Component Library",
+        "role":"Lead Frontend Engineer",
+        "start":"2008-10-01",
+        "end":"2009-02-01",
+        "tags":[],
+        "description": "Designed and developed an enterprise-wide Flex UI-Component framework. Created a component structure that allowed on-demand loading of modules and localization data, allowing the modules to be loosely coupled to each other, but maintain strongly-typed data interfaces."
+
+      }]
+    },{
+      "employer": "Panasonic Avionics",
+      "start":"2005-12-15",
+      "end":"2008-10-01",
+      "primaryColor": "#053bb5",
+      "title": "Senior Multimedia Developer",
+      "description":"Created applications and content templates that allowed our developers to maintain high quality and high efficiency. Developed interactive diagrams and software simulators for web-based and classroom instruction."
+    }
+  ],
+  "projects":[],
+  "education":[]
+}

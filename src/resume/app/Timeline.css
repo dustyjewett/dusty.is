@@ -1,0 +1,11 @@
+.timeline ol {
+    padding: 0;
+    margin:0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.timeline a {
+    text-decoration: none;
+}
