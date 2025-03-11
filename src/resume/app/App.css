@@ -33,6 +33,11 @@
     align-items: center;
     justify-content: space-between;
 }
+@media (max-width: 650px) {
+    .header--whoami {
+        flex-direction: column;
+    }
+}
 .header--parenthetical {
     font-size: smaller;
     text-align: center;
@@ -44,7 +49,6 @@
     flex-direction: column;
     justify-content: center;
     flex-grow: 1;
-    padding-top: 2rem;
     max-width: 1200px;
 }
 

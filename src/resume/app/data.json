@@ -11,7 +11,7 @@
         {
           "name":"Bandcamp: Shopify Inventory Sync",
           "role":"Project Lead",
-          "start": "2024-01-01",
+          "start": "2024-04-01",
           "end": "2025-02-15",
           "tags": ["typescript", "vue", "ruby", "shopify", "async", "pubsub", "pipeline", "ecommerce", "mysql"],
           "description":"Built an integration with Shopify that allows Artists to simplify their inventory maintenance. Focused on building a system that builds trust with the users by proactively warning users about why they can't do something. Ensured that we kept that trust by providing detailed updates of actions we took on the user's behalf.\n\n  -   Planned and built a system that synchronizes inventory between two retail powerhouses.\n  -   Built out admin tools and audit logs to ensure that when one systems stops agreeing with the other, we're able to clearly explain why to the users (like deleting an item from one store but not the other).\n  -   Worked with internal Systems Team to be the first full usage of Google Pubsub.\n  -   Used Bandcamp's internal-only Ruby framework on the Backend, and Vue on the Frontend."
@@ -20,7 +20,7 @@
           "name":"Songtradr One / SSO",
           "role":"Team Support",
           "start":"2023-08-22",
-          "end":"2023-12-22",
+          "end":"2024-04-01",
           "tags": ["nodejs", "typescript", "cdk", "infrastructure", "aws", "cognito", "ci/cd"],
           "description":"Re-tooled the budding project's CDK and build pipelines to support the team's ideal workflows, namely, fully independent environments for each pull request.\n\n  -   Built out a library of CDK constructs/patterns to enable broader adoption across the company\n  -   Worked through the various issues presented by AWS's limitations on some resources.\n  -   Facilitated the existing team determining what their ideal workflow is, then implementing it."
         },
@@ -75,7 +75,7 @@
       "start":"2013-02-01",
       "end":"2015-04-01",
       "primaryColor": "#3996e3",
-      "title": "Senior Software Engineer / Engineering Manager",
+      "title": "Engineering Manager",
       "projects":[{
         "name":"Diesel",
         "role": "Engineering Manager",
@@ -125,7 +125,7 @@
       "start":"2008-10-01",
       "end":"2010-06-01",
       "primaryColor": "#f0a912",
-      "title": "Lead Engineer / Engineering Manager",
+      "title": "Engineering Manager",
       "projects":[{
         "name":"Active Payment Services",
         "role":"Engineering Manager",
@@ -147,7 +147,7 @@
       "start":"2005-12-15",
       "end":"2008-10-01",
       "primaryColor": "#053bb5",
-      "title": "Senior Multimedia Developer",
+      "title": "Sr Multimedia Dev",
       "description":"Created applications and content templates that allowed our developers to maintain high quality and high efficiency. Developed interactive diagrams and software simulators for web-based and classroom instruction."
     }
   ],
