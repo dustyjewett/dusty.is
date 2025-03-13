@@ -10,8 +10,9 @@ export default defineConfig({
             clientPort: parseInt(process.env.WEBSOCKET_PORT!),
         },
     },
+    base: '',
     build: {
-      outDir: '../../public/a/software.engineer/',
+        outDir: '../../public/a/software.engineer/',
     },
     plugins: [react()],
 });
