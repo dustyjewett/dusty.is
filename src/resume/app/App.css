@@ -1,0 +1,56 @@
+:root {
+    --content-background: #F0F2F4
+}
+
+.app {
+    color: #353C4E;
+    background: var(--content-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+@media print {
+    :root {
+        --content-background: white;
+    }
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1000;
+    width: 100%
+}
+
+.header--whoami {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (max-width: 650px) {
+    .header--whoami {
+        flex-direction: column;
+    }
+}
+.header--parenthetical {
+    font-size: smaller;
+    text-align: center;
+}
+
+.content {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    max-width: 1200px;
+}
+
+
+

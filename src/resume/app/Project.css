@@ -1,0 +1,17 @@
+.project--role {
+    font-size: smaller;
+}
+
+.project--timeline{
+    position: sticky;
+    top: 167px;
+    background-color: var(--content-background);
+}
+.project--timeline__bar {
+    border: none;
+    display: flex;
+    color: white;
+    padding: 0 5px;
+    font-size: 9px;
+    justify-content: space-between;
+}
